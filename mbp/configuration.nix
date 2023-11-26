@@ -81,6 +81,8 @@
       grim
       slurp
       wl-clipboard
+      weechat
+      weechatScripts.wee-slack
     ];
   };
 
