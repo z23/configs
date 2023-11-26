@@ -66,7 +66,6 @@
       firefox
       chromium
       alacritty
-      slack-term
       vscode
       remmina
       wireshark
