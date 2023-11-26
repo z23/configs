@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
       <home-manager/nixos> 
 
     ];
@@ -149,6 +149,9 @@
   programs.zsh.histFile = "~/.histfile";
   programs.zsh.enableLsColors = true;
   programs.zsh.syntaxHighlighting.enable = true;
+  programs.zsh.interactiveShellInit = "
+    bindkey \'^R\' history-incremental-search-backward
+  ";
   programs.neovim.enable = true;
   programs.neovim.defaultEditor = true;
   programs.neovim.viAlias = true;
