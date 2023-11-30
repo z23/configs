@@ -53,16 +53,16 @@
   #services.xserver.desktopManager.gnome.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
 
-  programs.hyprland.enable = true;
-  programs.hyprland.xwayland.enable = true;
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  #programs.hyprland.enable = true;
+  #programs.hyprland.xwayland.enable = true;
+  #xdg.portal.enable = true;
+ # xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   hardware.opengl.enable = true;
 
-  environment.sessionVariables = {
-    NIXOS_OZONE_WL = "1";
-  };
+  #environment.sessionVariables = {
+  #  NIXOS_OZONE_WL = "1";
+  #};
 
   services.xserver = {
     layout = "au";
